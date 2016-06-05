@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Ecualizador </string>
+    <string name="bass_boost">Ajuste Bass</string>
+    <string name="habilitado">Habilitado</string>
+    <string name="reset">Resetear</string>
+    <string name="copyright_message">Copyright 2016</string>
+    <string name="title_activity_player">Ecualizador</string>
+</resources>
