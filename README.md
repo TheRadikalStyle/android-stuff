@@ -1,4 +1,12 @@
-<<<<<<< HEAD
 # android-stuff
 Android projects using Android Studio
->>>>>>> f9681911b202ae891ec9565b7d367a4f260a673f
+
+- EQ
+	An equalizer created for a friend for his class
+
+- Numeric keyboard on screen
+	On test
+
+- FB login
+	Implementation of facebook login
+
