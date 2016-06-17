@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="spinner_values_val">
+        <item>Marcianito 100% real no fake</item>
+        <item>Puke rainbow</item>
+        <item>Travolta</item>
+        <item>Nyan Cat</item>
+        <item>Universe Secrets</item>
+    </string-array>
+</resources>
