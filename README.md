@@ -10,3 +10,5 @@ Android projects using Android Studio
 - FB login
 	Implementation of facebook login
 
+- WebViewTest
+	How to use the WebView component
