@@ -11,4 +11,4 @@ Android projects using Android Studio
 	Implementation of facebook login
 
 - WebViewTest
-	How to use the WebView component
+	How to use the WebView component with a Spinner for choose the website 
