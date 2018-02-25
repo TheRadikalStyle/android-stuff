@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
     tools:context="com.theradikalsoftware.sensors.MainActivity">
 
     <ScrollView
@@ -13,12 +14,13 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
             <android.support.v7.widget.CardView
                 android:id="@+id/main_cardview_accelerometer"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                app:cardUseCompatPadding="true"
                 tools:layout_editor_absoluteX="8dp"
                 tools:layout_editor_absoluteY="8dp">
 
@@ -59,6 +61,7 @@
                 android:id="@+id/main_cardview_gyroscope"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                app:cardUseCompatPadding="true"
                 tools:layout_editor_absoluteX="295dp"
                 tools:layout_editor_absoluteY="429dp">
 
@@ -99,6 +102,7 @@
                 android:id="@+id/main_cardview_gravity"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                app:cardUseCompatPadding="true"
                 tools:layout_editor_absoluteX="295dp"
                 tools:layout_editor_absoluteY="429dp">
 
@@ -131,6 +135,156 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="TextView" />
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/main_cardview_steps"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardUseCompatPadding="true"
+                tools:layout_editor_absoluteX="295dp"
+                tools:layout_editor_absoluteY="429dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/cardview_steps_textview_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="CONTADOR DE PASOS" />
+
+                    <TextView
+                        android:id="@+id/cardview_steps_textview_steps"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="TextView" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/main_cardview_proximity"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardUseCompatPadding="true"
+                tools:layout_editor_absoluteX="295dp"
+                tools:layout_editor_absoluteY="429dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/cardview_proximity_textview_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="PROXIMIDAD (cm)" />
+
+                    <TextView
+                        android:id="@+id/cardview_proximity_textview_prox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="TextView" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/main_cardview_pressure"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardUseCompatPadding="true"
+                tools:layout_editor_absoluteX="295dp"
+                tools:layout_editor_absoluteY="429dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/cardview_pressure_textview_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="PRESION ATMOSFERICA (milibares)" />
+
+                    <TextView
+                        android:id="@+id/cardview_pressure_textview_pressure"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="TextView" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/main_cardview_light"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardUseCompatPadding="true"
+                tools:layout_editor_absoluteX="295dp"
+                tools:layout_editor_absoluteY="429dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/cardview_light_textview_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="LUZ AMBIENTAL (lx)" />
+
+                    <TextView
+                        android:id="@+id/cardview_light_textview_light"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="TextView" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/main_cardview_temperature"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardUseCompatPadding="true"
+                tools:layout_editor_absoluteX="295dp"
+                tools:layout_editor_absoluteY="429dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/cardview_temperature_textview_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="TEMPERATURA AMBIENTAL (°C)" />
+
+                    <TextView
+                        android:id="@+id/cardview_temperature_textview_temp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="TextView" />
+
                 </LinearLayout>
 
             </android.support.v7.widget.CardView>
