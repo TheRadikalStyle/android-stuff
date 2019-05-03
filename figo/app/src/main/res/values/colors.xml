@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="nexus_white">#ffffff</color>
+    <color name="nexus_orange">#FFA300</color>
+    <color name="nexus_gray1">#DFDFE1</color>
+    <color name="nexus_blue">#2C6085</color>
+    <color name="nexus_aqua">#77D0CE</color>
+    <color name="nexus_gray2">#7F888F</color>
+    <color name="nexus_gunmetal">#575B5E</color>
+    <color name="nexus_tealish">#2FB3B4</color>
+    <color name="nexus_text_black">#030303</color>
+    <color name="nexus_text_gray">#8C969D</color>
+    <color name="nexus_text_darkgray">#202020</color>
+</resources>

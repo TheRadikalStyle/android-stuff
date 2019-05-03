@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">FIGO</string>
+    <string name="template_distance_between">%s mi</string>
+    <string name="template_petfriendly">Pet Friendly</string>
+    <string name="title_activity_place_detail_place">PlaceDetailPlace</string>
+    <string name="error_detailplace_init">Error al obtener datos, intenta nuevamente</string>
+    <string name="details_text_direction">Directions</string>
+    <string name="details_text_call">Call</string>
+    <string name="details_text_website">Visit Website</string>
+    <string name="google_android_map_api_key"></string>
+</resources>
