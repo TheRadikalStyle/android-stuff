@@ -10,6 +10,9 @@ Android projects using Android Studio
 - FB login
 	Implementation of facebook login
 
+- Sensors
+	App that shows information about sensors
+
 - WebViewTest
 	How to use the WebView component with a Spinner for choose the website 
 
