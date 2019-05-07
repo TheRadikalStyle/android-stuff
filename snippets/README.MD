@@ -12,3 +12,6 @@
   · Manejador de bitmap
   · Convertidor de meses int a string
   · Checar si el dispositivo está conectado a internet
+
+- BroadcastOnBootCompleted
+  Acciones a realizar cuando android termine el arranque
