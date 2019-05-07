@@ -1,0 +1,34 @@
+/*
+ *  Registrar receiver en Manifest
+ */
+
+ <receiver android:name=".StartServicesOnBootCompleted">
+      <intent-filter>
+          <action android:name="android.intent.action.BOOT_COMPLETED" />
+      </intent-filter>
+  </receiver>
+
+
+
+
+/*
+ * CLASE .StartServicesOnBootCompleted
+ * Broadcast que recibe el mensaje BOOT_COMPLETED, y corre los servicios
+ * dependiendo que si el usuario los tiene habilitados o no
+ */
+
+import android.content.BroadcastReceiver;
+import android.content.Context;
+import android.content.Intent;
+import android.content.SharedPreferences;
+import android.os.Build;
+import android.preference.PreferenceManager;
+
+public class StartServicesOnBootCompleted extends BroadcastReceiver {
+    @Override
+    public void onReceive(Context context, Intent intent) {
+        if (Intent.ACTION_BOOT_COMPLETED.equals(intent.getAction())) {
+            //Do something
+        }
+    }
+}
