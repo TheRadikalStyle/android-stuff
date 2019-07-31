@@ -18,3 +18,6 @@ Android projects using Android Studio
 
 - Figo
 	Exam for an interview
+
+- BottomSheet
+	Example using bottom sheet behavior
