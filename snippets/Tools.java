@@ -13,6 +13,8 @@ import android.net.NetworkInfo;
 import android.os.Build;
 import android.view.Window;
 import android.view.WindowManager;
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
 
 import java.util.List;
 
@@ -131,5 +133,26 @@ public class Tools {
         ConnectivityManager cm = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
         NetworkInfo netInfo = cm.getActiveNetworkInfo();
         return netInfo != null && netInfo.isConnectedOrConnecting();
+    }
+
+    public String EncryptToMD5(String pwd){
+        try{
+            //CREATE MD5 HASH
+            MessageDigest digest = java.security.MessageDigest.getInstance("MD5");
+            digest.update(pwd.getBytes());
+            byte messageDigest[] =  digest.digest();
+
+            //CREATE HEX String
+            StringBuilder hexString = new StringBuilder();
+            for(byte aMessageDigest : messageDigest){
+                String h = Integer.toHexString(0xFF & aMessageDigest);
+                while (h.length() < 2)
+                    h = "0" + h;
+                hexString.append(h);
+            }
+            return hexString.toString();
+        }catch(NoSuchAlgorithmException ex){
+            return  pwd;
+        }
     }
 }
