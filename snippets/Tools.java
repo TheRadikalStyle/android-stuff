@@ -155,4 +155,18 @@ public class Tools {
             return  pwd;
         }
     }
+
+    public int CheckPlayServices(Context context){
+    GoogleApiAvailability googleApiAvailability = GoogleApiAvailability.getInstance();
+    return googleApiAvailability.isGooglePlayServicesAvailable(context);
+
+    /*if(tools.CheckPlayServices(this) != ConnectionResult.SUCCESS){
+        GoogleApiAvailability.getInstance().getErrorDialog(this, ConnectionResult.SERVICE_MISSING, 0, new DialogInterface.OnCancelListener() {
+            @Override
+            public void onCancel(DialogInterface dialogInterface) {
+
+            }
+        }).show();
+    }else{} */
+  }
 }
