@@ -1,4 +1,10 @@
-package mx.gob.ssnl.imc;
+/*
+*
+* Author: David Ochoa Gtz
+* @TheRadikalStyle
+* 2020
+*
+*/
 
 import android.app.Activity;
 import android.app.ActivityManager;
@@ -204,4 +210,21 @@ public class Tools {
         });
     }
 
+    public String GetAppVersion(){
+      PackageInfo pInfo = this.getPackageManager().getPackageInfo(getPackageName(), 0);
+      return pInfo.versionName;
+    }
+
+    public void SetSecurity(Activity context){
+        context.getWindow().setFlags(WindowManager.LayoutParams.FLAG_SECURE, WindowManager.LayoutParams.FLAG_SECURE);
+    }
+
+    public String GetTimeStamp(){
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss", Locale.getDefault());
+        return sdf.format(new Date());
+    }
+
+    public String GetDeviceName(){
+        return Build.MODEL + " ("+ Build.MANUFACTURER +")";
+    }
 }
